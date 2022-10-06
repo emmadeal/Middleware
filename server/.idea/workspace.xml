@@ -2,28 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57186b33-7410-4579-a508-f023587775ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../client/src/ClientBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/src/Display.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/src/Exceptions/InvalidCredentialsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/src/Exceptions/SignUpException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/src/service/Bill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/src/service/IClientBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/src/service/IConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/src/service/IVODService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/src/service/MovieDesc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Connection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/InvalidCredentialsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/SignUpException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/Bill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/IClientBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/IConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/IVODService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -55,6 +33,20 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

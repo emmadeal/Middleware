@@ -14,11 +14,12 @@ public class Main {
         try{
             Display display = new Display();
             Registry reg = LocateRegistry.getRegistry(2001);
-            IConnection stub = (IConnection)reg.lookup("connexion");
+            IConnection stub = (IConnection)reg.lookup("Connection");
             System.out.println("Bienvenue ! Avez-vous déjà un compte ? (O/N)");
             Scanner s = new Scanner(System.in);
-            if (s.equals("O")) display.login(stub);
-            if (s.equals("N")) display.signIn(stub);
+            String input = s.nextLine();
+            if (input.equals("O")) display.login(stub);
+            if (input.equals("N")) display.signIn(stub);
             else return;
             display.searchMovie();
         }
