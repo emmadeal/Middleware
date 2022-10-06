@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b2cc7be-9574-46ba-b7ad-8d442f6ecc24" name="Changes" comment="" />
+    <list default="true" id="b4353b11-d356-4c16-9097-f8c62ef5ebaa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ClientBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Display.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exceptions/InvalidCredentialsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exceptions/SignUpException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/Bill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/IClientBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/IConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/IVODService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/MovieDesc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/Connection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/Exceptions/InvalidCredentialsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/Exceptions/SignUpException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/service/Bill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/service/IClientBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/service/IConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/service/IVODService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +40,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectId" id="2FlE4WwBQ6gWyHqHbGnrxoDY2Ip" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2Flku5G2MmEzSQrSuKLg8l1Phks" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -27,39 +56,26 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="client" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0b2cc7be-9574-46ba-b7ad-8d442f6ecc24" name="Changes" comment="" />
-      <created>1665058081818</created>
+      <changelist id="b4353b11-d356-4c16-9097-f8c62ef5ebaa" name="Changes" comment="" />
+      <created>1665074279972</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1665058081818</updated>
+      <updated>1665074279972</updated>
     </task>
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.NullPointerException" package="java.lang" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
