@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4353b11-d356-4c16-9097-f8c62ef5ebaa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../server/src/CredentialsFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/credentials.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/out/production/server/Connection.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/out/production/server/Connection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/out/production/server/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/out/production/server/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/out/production/server/service/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/out/production/server/service/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/Connection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/service/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/service/Client.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,5 +77,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

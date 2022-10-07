@@ -1,5 +1,6 @@
 import service.IConnection;
 
+import java.io.IOException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
@@ -11,7 +12,7 @@ public class Main {
             Registry reg = LocateRegistry.createRegistry(2001);
             reg.rebind("Connection", connection);
         }
-        catch (RemoteException e){
+        catch (IOException e){
             e.printStackTrace();
         }
     }
