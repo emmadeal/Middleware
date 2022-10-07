@@ -13,7 +13,7 @@ public class ClientBox extends UnicastRemoteObject implements IClientBox {
     }
 
     @Override
-    public void stream(Byte[] chunck) throws RemoteException {
+    public void stream(byte[] chunck) throws RemoteException {
         System.out.println(Arrays.toString(chunck));
     }
 }

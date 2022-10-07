@@ -25,7 +25,7 @@ public class Display {
     }
 
     IVODService login(IConnection stub) throws InvalidCredentialsException, RemoteException {
-        iVODService =stub.login(askEmail(),askPwd());
+        iVODService = stub.login(askEmail(),askPwd());
         while (iVODService==null){
             System.out.println("Le mot de passe ou l'email est incorrect, veuillez réessayer");
             iVODService = stub.login(askEmail(),askPwd());

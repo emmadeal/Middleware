@@ -15,6 +15,7 @@ public class VODService extends UnicastRemoteObject implements IVODService {
     protected VODService() throws RemoteException {
     }
 
+    @Override
     public List<MovieDesc> viewCatalog() throws RemoteException{
         return List.of(
                 new MovieDesc("Titanic","111-111-111-11-1-0","Un bateau coule",new byte[]{0, 1, 0,0, 1, 0,0, 1, 0,0, 1, 0}),
@@ -24,7 +25,7 @@ public class VODService extends UnicastRemoteObject implements IVODService {
     }
 
     @Override
-    public synchronized Bill playMovie(String isbn, IClientBox box) throws RemoteException {
+    public Bill playMovie(String isbn, IClientBox box) throws RemoteException {
         final int NB_BIT = 5;
         Optional<MovieDesc> movieDescOptional= viewCatalog().stream().filter(movie -> movie.getIsbn().equals(isbn)).findFirst();
         System.out.println(movieDescOptional);
@@ -44,4 +45,5 @@ public class VODService extends UnicastRemoteObject implements IVODService {
         }
         return null;
     }
+
 }
