@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class Connection extends UnicastRemoteObject implements IConnection {
     CredentialsFile cf;
     ArrayList<Client> clientList;
-    IVODService movies;
+    IVODService movies = new VODService();
 
     protected Connection() throws RemoteException, IOException {
         super();

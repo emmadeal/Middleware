@@ -44,9 +44,9 @@ public class Display {
     }
 
     void searchMovie() throws RemoteException {
-        IClientBox clientBox = new ClientBox(2001);
+        IClientBox clientBox = new ClientBox();
         System.out.println("Voici le catalogue des films disponibles");
-        List<MovieDesc> movieDescs =iVODService.viewCatalog();
+        List<MovieDesc> movieDescs = iVODService.viewCatalog();
         System.out.println(movieDescs);
         System.out.println("Veuillez saisir l'identifiant du film que vous souhaitez visionner");
         String ibs = sc.nextLine();

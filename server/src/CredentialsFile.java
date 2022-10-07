@@ -21,13 +21,17 @@ public class CredentialsFile {
     public ArrayList<Client> readFile(){
         Client client;
         ArrayList<Client> clients = new ArrayList<>();
-        String line;
+        String mail;
+        String pwd;
 
         try{
             while(true){
-                line = br.readLine();
-                if(line==null) break;
-                client = new Client(line, br.readLine());
+                mail = br.readLine();
+                pwd = br.readLine();
+                if(mail==null) break;
+                System.out.println("mail: " + "-" + mail + "-");
+                System.out.println("pwd: " + "-" + pwd + "-");
+                client = new Client(mail, pwd);
                 clients.add(client);
             }
         } catch (IOException e){
@@ -49,8 +53,8 @@ public class CredentialsFile {
     public void writeFile(Client client){
 
         try {
-            bw.write(client.getMail());
-            bw.write(client.getPassword());
+            bw.write(client.getMail()+"\n");
+            bw.write(client.getPassword()+"\n");
         } catch (IOException e){
             e.printStackTrace();
         }

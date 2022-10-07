@@ -19,7 +19,10 @@ public class Main {
             Scanner s = new Scanner(System.in);
             String input = s.nextLine();
             if (input.equals("O")) display.login(stub);
-            if (input.equals("N")) display.signIn(stub);
+            else if (input.equals("N")){
+                display.signIn(stub);
+                display.login(stub);
+            }
             else return;
             display.searchMovie();
         }

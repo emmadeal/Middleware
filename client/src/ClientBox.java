@@ -8,8 +8,8 @@ import java.util.Arrays;
 
 public class ClientBox extends UnicastRemoteObject implements IClientBox {
 
-    protected ClientBox(int port) throws RemoteException {
-        super(port);
+    protected ClientBox() throws RemoteException {
+        super();
     }
 
     @Override

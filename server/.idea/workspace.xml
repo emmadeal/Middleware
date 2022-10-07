@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57186b33-7410-4579-a508-f023587775ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CredentialsFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/credentials.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/ClientBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/ClientBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/Display.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/server/Connection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server/Connection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/server/service/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server/service/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server/Exceptions/InvalidCredentialsException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server/Exceptions/InvalidCredentialsException.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CredentialsFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CredentialsFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exceptions/InvalidCredentialsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exceptions/InvalidCredentialsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/credentials.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/credentials.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
