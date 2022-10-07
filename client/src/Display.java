@@ -47,7 +47,13 @@ public class Display {
         IClientBox clientBox = new ClientBox();
         System.out.println("Voici le catalogue des films disponibles");
         List<MovieDesc> movieDescs = iVODService.viewCatalog();
-        System.out.println(movieDescs);
+        for (MovieDesc movie : movieDescs){
+            System.out.println("------------------------------------");
+            System.out.println("Titre : "+movie.getMovieName());
+            System.out.println("Identifiant: "+movie.getIsbn());
+            System.out.println("Synopsys: "+movie.getSynopsis());
+            System.out.println();
+        }
         System.out.println("Veuillez saisir l'identifiant du film que vous souhaitez visionner");
         String ibs = sc.nextLine();
         Bill bill = iVODService.playMovie(ibs,clientBox);

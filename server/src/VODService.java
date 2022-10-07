@@ -17,9 +17,9 @@ public class VODService extends UnicastRemoteObject implements IVODService {
 
     public List<MovieDesc> viewCatalog() throws RemoteException{
         return List.of(
-                new MovieDesc("test","111-111-111-11-1-1","oui",new byte[]{0, 1, 0,0, 1, 0,0, 1, 0,0, 1, 0}),
-                new MovieDesc("test","111-111-111-11-1-0","oui",new byte[]{0, 1, 0,0, 1, 0,0, 1, 0,0, 1, 0}),
-                new MovieDesc("test","111-111-111-11-1-2","oui",new byte[]{0, 1, 0,0, 1, 0,0, 1, 0,0, 1, 0})
+                new MovieDesc("Titanic","111-111-111-11-1-0","Un bateau coule",new byte[]{0, 1, 0,0, 1, 0,0, 1, 0,0, 1, 0}),
+                new MovieDesc("Avengers","111-111-111-11-1-1","Des superheros se rassemblent",new byte[]{0, 1, 0,0, 1, 0,0, 1, 0,0, 1, 0}),
+                new MovieDesc("Shutter Island","111-111-111-11-1-2","Un patient fou devient policier",new byte[]{0, 1, 0,0, 1, 0,0, 1, 0,0, 1, 0})
         );
     }
 
