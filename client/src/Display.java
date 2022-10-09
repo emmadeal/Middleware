@@ -27,6 +27,7 @@ public class Display {
     }
 
     IVODService login(IConnection stub) throws InvalidCredentialsException, RemoteException {
+        //gestion de l'affchage dans la console
         System.out.println("Connectez-vous :");
         iVODService = stub.login(askEmail(),askPwd());
         while (iVODService==null){
@@ -38,6 +39,7 @@ public class Display {
 
 
     void signIn(IConnection stub) throws RemoteException, SignUpException {
+        //gestion de l'affichage dans la console
         System.out.println("Inscrivez-vous :");
         boolean validMail = stub.signUp(askEmail(),askPwd());
         while(!validMail){
@@ -49,6 +51,7 @@ public class Display {
 
     void searchMovie() throws RemoteException {
         clientBox = new ClientBox();
+        //cela permet au client de voir la liste des films du catalogue
         System.out.println("Voici les films disponibles :");
         movieDescs = iVODService.viewCatalog();
         for (MovieDesc movie : movieDescs){
@@ -58,10 +61,13 @@ public class Display {
             System.out.println("Synopsys: "+movie.getSynopsis());
             System.out.println();
         }
+        //le client saisi l'identifiant du film qu'il souhaite visionner
         System.out.println("Veuillez saisir l'identifiant du film que vous souhaitez visionner");
         String ibs = sc.nextLine();
+        //on lance le film en appelant la méthode playMovie implémentée coté serveur
         bill = iVODService.playMovie(ibs, clientBox);
 
+        //tant que le client n'a pas saisi un identifiant valide, on lui redemande
         while(bill==null){
             System.out.println("Oups... ce film n'existe pas. Voici les films disponibles :");
             for (MovieDesc movie : movieDescs){
@@ -75,6 +81,7 @@ public class Display {
             ibs = sc.nextLine();
             bill = iVODService.playMovie(ibs,clientBox);
         }
+        //on affiche le prix dans la console
         System.out.println("Votre total est de "+bill +" euros");
     }
 }
