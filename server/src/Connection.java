@@ -1,6 +1,6 @@
 import Exceptions.InvalidCredentialsException;
 import Exceptions.SignUpException;
-import service.*;
+import Service.*;
 
 import java.io.IOException;
 import java.rmi.RemoteException;

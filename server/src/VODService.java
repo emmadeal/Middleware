@@ -1,7 +1,7 @@
-import service.Bill;
-import service.IClientBox;
-import service.IVODService;
-import service.MovieDesc;
+import Service.Bill;
+import Service.IClientBox;
+import Service.IVODService;
+import Service.MovieDesc;
 
 import java.math.BigInteger;
 import java.rmi.RemoteException;
@@ -18,24 +18,21 @@ public class VODService extends UnicastRemoteObject implements IVODService {
     @Override
     public List<MovieDesc> viewCatalog() throws RemoteException{
         return List.of(
-                new MovieDesc("Titanic","111-111-111-11-1-0","Un bateau coule",new byte[]{0, 1, 0,0, 1, 0,0, 1, 0,0, 1, 0}),
-                new MovieDesc("Avengers","111-111-111-11-1-1","Des superheros se rassemblent",new byte[]{0, 1, 0,0, 1, 0,0, 1, 0,0, 1, 0}),
-                new MovieDesc("Shutter Island","111-111-111-11-1-2","Un patient fou devient policier",new byte[]{0, 1, 0,0, 1, 0,0, 1, 0,0, 1, 0})
+                new MovieDesc("Titanic","000-000-000-00-0-0","Un bateau coule",new byte[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}),
+                new MovieDesc("Avengers","111-111-111-11-1","Des superheros se rassemblent",new byte[]{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}),
+                new MovieDesc("Shutter Island","222-222-222-22-2","Un patient fou devient policier",new byte[]{0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0})
         );
     }
 
     @Override
     public Bill playMovie(String isbn, IClientBox box) throws RemoteException {
-        final int NB_BIT = 5;
-        Optional<MovieDesc> movieDescOptional= viewCatalog().stream().filter(movie -> movie.getIsbn().equals(isbn)).findFirst();
-        System.out.println(movieDescOptional);
+        Optional<MovieDesc> movieDescOptional= viewCatalog().stream().filter(movie -> isbn.equals(movie.getIsbn())).findAny();
         if(movieDescOptional.isPresent()){
             byte[] bytes = movieDescOptional.get().getBytes();
-            box.stream(Arrays.copyOfRange(bytes,0,NB_BIT));
             new Thread(() -> {
-                for(int i=NB_BIT;i<bytes.length;i+=NB_BIT){
+                for(int i=0;i<bytes.length;i+=6){
                     try{
-                        box.stream(Arrays.copyOfRange(bytes,i,Math.min((i+NB_BIT),bytes.length)));
+                        box.stream(Arrays.copyOfRange(bytes,i,Math.min((i+6),bytes.length)));
                     }catch (RemoteException e){
                         e.printStackTrace();
                     }
@@ -45,5 +42,4 @@ public class VODService extends UnicastRemoteObject implements IVODService {
         }
         return null;
     }
-
 }

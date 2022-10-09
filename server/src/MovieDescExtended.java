@@ -1,4 +1,4 @@
-import service.MovieDesc;
+import Service.MovieDesc;
 
 public class MovieDescExtended extends MovieDesc {
     Byte[] teaser;

@@ -1,9 +1,8 @@
 import Exceptions.InvalidCredentialsException;
 import Exceptions.SignUpException;
-import service.*;
+import Service.*;
 
 import java.rmi.RemoteException;
-import java.rmi.registry.Registry;
 import java.util.List;
 import java.util.Scanner;
 
@@ -16,21 +15,22 @@ public class Display {
     IClientBox clientBox;
 
     String askEmail(){
-        System.out.println("Veuillez saisir votre email");
+        System.out.println("Veuillez saisir votre email.");
         String email = sc.nextLine();
         return email;
     }
 
     String askPwd(){
-        System.out.println("Veuillez saisir votre mot de passe");
+        System.out.println("Veuillez saisir votre mot de passe.");
         String pwd = sc.nextLine();
         return pwd;
     }
 
     IVODService login(IConnection stub) throws InvalidCredentialsException, RemoteException {
+        System.out.println("Connectez-vous :");
         iVODService = stub.login(askEmail(),askPwd());
         while (iVODService==null){
-            System.out.println("Le mot de passe ou l'email est incorrect, veuillez réessayer");
+            System.out.println("Le mot de passe ou l'email est incorrect, veuillez réessayer.");
             iVODService = stub.login(askEmail(),askPwd());
         }
         return iVODService;
@@ -38,9 +38,10 @@ public class Display {
 
 
     void signIn(IConnection stub) throws RemoteException, SignUpException {
+        System.out.println("Inscrivez-vous :");
         boolean validMail = stub.signUp(askEmail(),askPwd());
         while(!validMail){
-            System.out.println("L'email existe déjà, veuillez en saisir un nouveau");
+            System.out.println("L'email saisi est déjà utilisé, veuillez en saisir un nouveau.");
             validMail = stub.signUp(askEmail(),askPwd());
         }
         System.out.println("Inscription reussie !");
@@ -48,7 +49,7 @@ public class Display {
 
     void searchMovie() throws RemoteException {
         clientBox = new ClientBox();
-        System.out.println("Voici le catalogue des films disponibles");
+        System.out.println("Voici les films disponibles :");
         movieDescs = iVODService.viewCatalog();
         for (MovieDesc movie : movieDescs){
             System.out.println("------------------------------------");
@@ -62,7 +63,7 @@ public class Display {
         bill = iVODService.playMovie(ibs, clientBox);
 
         while(bill==null){
-            System.out.println("Film introuvable, voici le catalogue des films disponibles");
+            System.out.println("Oups... ce film n'existe pas. Voici les films disponibles :");
             for (MovieDesc movie : movieDescs){
                 System.out.println("------------------------------------");
                 System.out.println("Titre : "+movie.getMovieName());
@@ -70,10 +71,10 @@ public class Display {
                 System.out.println("Synopsys: "+movie.getSynopsis());
                 System.out.println();
             }
-            System.out.println("Veuillez saisir l'identifiant du film que vous souhaitez visionner");
+            System.out.println("Veuillez saisir l'identifiant du film que vous souhaitez visionner.");
             ibs = sc.nextLine();
             bill = iVODService.playMovie(ibs,clientBox);
         }
-        System.out.println("Veuillez payer "+bill +" euros");
+        System.out.println("Votre total est de "+bill +" euros");
     }
 }

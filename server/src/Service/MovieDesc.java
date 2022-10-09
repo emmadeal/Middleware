@@ -1,4 +1,4 @@
-package service;
+package Service;
 
 import java.io.Serializable;
 
@@ -34,6 +34,6 @@ public class MovieDesc implements Serializable {
 
     @Override
     public String toString() {
-        return String.format("FilmID : %s , Synopsis : %s",isbn,synopsis);
+        return String.format("FilmID :"+isbn+"| Synopsis "+synopsis);
     }
 }

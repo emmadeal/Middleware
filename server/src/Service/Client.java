@@ -1,4 +1,4 @@
-package service;
+package Service;
 
 public class Client {
 
@@ -13,7 +13,6 @@ public class Client {
     public String getMail() {
         return mail;
     }
-
     public String getPassword() {
         return password;
     }
