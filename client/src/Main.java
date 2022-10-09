@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws RemoteException {
+    public static void main(String[] args) {
         try{
             Display display = new Display();
             Registry reg = LocateRegistry.getRegistry(2001);

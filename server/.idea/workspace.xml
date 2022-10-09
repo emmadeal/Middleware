@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57186b33-7410-4579-a508-f023587775ed" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/ClientBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/ClientBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/out/production/client/Display.class" beforeDir="false" afterPath="$PROJECT_DIR$/../client/out/production/client/Display.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/Display.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/service/IClientBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/service/IClientBox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/VODService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VODService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/server/VODService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/server/VODService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/IClientBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/IClientBox.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +37,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />

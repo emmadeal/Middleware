@@ -11,6 +11,9 @@ public class Display {
 
     Scanner sc = new Scanner(System.in);
     IVODService iVODService = null;
+    Bill bill = null;
+    List<MovieDesc> movieDescs;
+    IClientBox clientBox;
 
     String askEmail(){
         System.out.println("Veuillez saisir votre email");
@@ -35,18 +38,18 @@ public class Display {
 
 
     void signIn(IConnection stub) throws RemoteException, SignUpException {
-        boolean isValidMail = stub.signUp(askEmail(),askPwd());
-        while(!isValidMail){
+        boolean validMail = stub.signUp(askEmail(),askPwd());
+        while(!validMail){
             System.out.println("L'email existe déjà, veuillez en saisir un nouveau");
-            isValidMail = stub.signUp(askEmail(),askPwd());
+            validMail = stub.signUp(askEmail(),askPwd());
         }
         System.out.println("Inscription reussie !");
     }
 
     void searchMovie() throws RemoteException {
-        IClientBox clientBox = new ClientBox();
+        clientBox = new ClientBox();
         System.out.println("Voici le catalogue des films disponibles");
-        List<MovieDesc> movieDescs = iVODService.viewCatalog();
+        movieDescs = iVODService.viewCatalog();
         for (MovieDesc movie : movieDescs){
             System.out.println("------------------------------------");
             System.out.println("Titre : "+movie.getMovieName());
@@ -56,11 +59,17 @@ public class Display {
         }
         System.out.println("Veuillez saisir l'identifiant du film que vous souhaitez visionner");
         String ibs = sc.nextLine();
-        Bill bill = iVODService.playMovie(ibs,clientBox);
+        bill = iVODService.playMovie(ibs, clientBox);
 
         while(bill==null){
             System.out.println("Film introuvable, voici le catalogue des films disponibles");
-            System.out.println(movieDescs);
+            for (MovieDesc movie : movieDescs){
+                System.out.println("------------------------------------");
+                System.out.println("Titre : "+movie.getMovieName());
+                System.out.println("Identifiant: "+movie.getIsbn());
+                System.out.println("Synopsys: "+movie.getSynopsis());
+                System.out.println();
+            }
             System.out.println("Veuillez saisir l'identifiant du film que vous souhaitez visionner");
             ibs = sc.nextLine();
             bill = iVODService.playMovie(ibs,clientBox);

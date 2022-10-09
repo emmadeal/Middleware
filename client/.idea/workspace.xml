@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4353b11-d356-4c16-9097-f8c62ef5ebaa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../server/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClientBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClientBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/client/Display.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/client/Display.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Display.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/IClientBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/IClientBox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/VODService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/VODService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/out/production/server/VODService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../server/out/production/server/VODService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/service/IClientBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/service/IClientBox.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
